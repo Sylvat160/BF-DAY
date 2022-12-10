@@ -141,56 +141,10 @@ i:nth-child(5n+5)
 {
     font-size: 3em;
 }
-/* 
-section {
-    width: 200px;
-     height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
- @keyframes anim {
-    0% {
-        transform: translateY(calc(100vh + 350px));
-    }
-    100% {
-        transform: translateY(-350px);
-    }
-} 
-
-.star {
-    position: relative;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid gold;
-    transform: rotate(35deg);
-}
-
-.star::before {
-    position: absolute;
-    content: '';
-    top: -45px;
-    left: -65px;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 80px solid gold;
-    transform: rotate(-35deg);
-}
-
-.star::after {
-    position: absolute;
-    content: '';
-    top: 3px;
-    left: -105px;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid gold;
-    transform: rotate(-70deg);
-} */
 
 .like 
 {
+    cursor: pointer;
     position: absolute;
     right: 0;
     top: 10px;
