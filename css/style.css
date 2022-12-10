@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Courgette&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: #eee;
+}
+
+h2 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    width: 100%;
+    font-size: 6vw;
+    line-height: 1em;
+    font-weight: 800;
+    color : #333;
+    text-transform: uppercase;
+    font-family: 'Arbutus Slab', serif;
+}
+
+i {
+    position: absolute;
+    display: block;
+    background: #000;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    z-index: -1000;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(calc(100vh + 350px));
+    }
+    100% {
+        transform: translateY(-350px);
+    }
+}
+
+i:nth-child(5n+1)
+{
+    background: #EE2B2F;
+}   
+i:nth-child(5n+2)
+{
+    background: #029F48;
+}
+i:nth-child(5n+3)
+{
+    background: #fff;
+    border : 5px solid #FFD215;
+}
+
+i:nth-child(5n+4)
+{
+    background: #2bd11b;
+    border: 5px solid #FFD215;
+}
+i:nth-child(5n+5)
+{
+    background: #FFD215;
+    border: 5px solid #2bd11b;
+}
+
+#water-effect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    float: left;
+    position: relative; 
+    top: 70%; 
+
+    /* min-height: 100vh; */
+
+}
+#water-effect p
+{
+    font-family: 'Courgette', cursive;
+}
+
+.drop
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* background: #ccc; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    text-shadow: -2px -2px #fff;
+    filter: drop-shadow(4px 4px 10px #fff);
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
+                15px 25px 10px rgba(0, 0, 0, 0.05),
+                15px 20px 20px rgba(0, 0, 0, 0.05),
+                inset -10px -10px 15px rgba(255, 255, 255,0.9);
+}
+
+.drop::before
+{
+    content: '';
+    position: absolute;
+    top:35px;
+    left: 25px;
+    background: #fff;
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    filter: blur(2px);
+}
+.drop::after
+{
+    content: '';
+    position: absolute;
+    top:25px;
+    left: 50px;
+    background: #fff;
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    filter: blur(2px);
+}
+
+.drop ion-icon
+{
+    color: #ff5353;
+    font-size: 2em;
+}
+
+ span 
+{
+    font-size: 3em;
+}
+/* 
+section {
+    width: 200px;
+     height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ @keyframes anim {
+    0% {
+        transform: translateY(calc(100vh + 350px));
+    }
+    100% {
+        transform: translateY(-350px);
+    }
+} 
+
+.star {
+    position: relative;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid gold;
+    transform: rotate(35deg);
+}
+
+.star::before {
+    position: absolute;
+    content: '';
+    top: -45px;
+    left: -65px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 80px solid gold;
+    transform: rotate(-35deg);
+}
+
+.star::after {
+    position: absolute;
+    content: '';
+    top: 3px;
+    left: -105px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid gold;
+    transform: rotate(-70deg);
+} */
+
+.like 
+{
+    position: absolute;
+    right: 0;
+    top: 10px;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        text-shadow: -2px -2px #fff;
+        filter: drop-shadow(4px 4px 10px #fff);
+        box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
+            15px 25px 10px rgba(0, 0, 0, 0.05),
+            15px 20px 20px rgba(0, 0, 0, 0.05),
+            inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+}
+
+.like ion-icon {
+    color: #ff5353;
+    font-size: 2em;
+}
+.like:hover , .drop:hover
+{
+    transform: scale(1.1);
+}
+
+#like-number {
+    position: absolute;
+    bottom: 0;
+    font-size: 1em;
+    font-weight: 800;
+    color: #ff5353;
+    text-shadow: -2px -2px #fff;
+    filter: drop-shadow(4px 4px 10px #fff);
+}
+
+h2 sup 
+{
+    font-size: 0.5em;
+    font-weight: 800;
+    color: #ff5353;
+    text-shadow: -2px -2px #fff;
+    filter: drop-shadow(4px 4px 10px #fff);
+}
+h2 sup span 
+{
+    font-size: 0.5em;
+    position: relative;
+    right: 1em;
+}
+
+@media only screen and (max-width: 768px)  {
+    .drop
+    {
+        width: 70px;
+        height: 70px;
+        font-size: 1em;
+        gap: 10px;
+    }
+    #water-effect span
+    {
+        font-size: 1em;
+    }
+
+    #water-effect 
+    {
+        position: relative;
+        left: 20px;
+    }
+    .drop img {
+        width: 50px;
+    }
+
+    .drop::before {
+        width: 10px;
+        height: 10px;
+    }
+    .drop::after {
+        width: 1px;
+        height: 1px;
+    }
+    
+    h2 {
+        font-size: 2.5em;
+        left: 0%;
+    }
+    h2 img {
+        width: 50px;
+    }
+
+
+        
+    
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    h2 {
+            font-size: 4.2em;
+        }
+    .drop , #water-effect span{
+       position: relative;
+       left: 15%;
+    }
+}
