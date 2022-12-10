@@ -48,8 +48,8 @@ function circle() {
 liking.addEventListener("click", async function () {
   const docRef = doc(db, "counter", clickDoc.id);
   clickValue++;
-  await updateDoc(docRef, { click: clickValue });
   like.innerText = clickValue;
+  await updateDoc(docRef, { click: clickValue });
 });
 
 circle();
