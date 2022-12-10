@@ -1,0 +1,19 @@
+{
+  "name": "BF-DAY",
+  "version": "1.0.0",
+  "description": "Animated page with like button for Burkina Faso independence day.",
+  "main": "index.js",
+  "repository": "https://github.com/Sylvat160/BF-DAY.git",
+  "author": "Sylvain Tagnabou",
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^9.15.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.1",
+    "process": "^0.11.10"
+  },
+  "scripts": {
+    "start": "parcel index.html"
+  }
+}
