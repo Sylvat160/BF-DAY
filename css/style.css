@@ -251,3 +251,8 @@ h2 sup span
        left: 15%;
     }
 }
+
+.like img
+{
+    padding-bottom: 10px;
+}
